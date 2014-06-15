@@ -24,7 +24,7 @@ simply.on('singleClick', function(e){
 	if (e.button === 'select')
 		log('fetching ' + script)
 		ajax(script, function(data){
-			log('got ' + data);
+			log('got ' + script);
 			//log(data);
 		}, function(){
 			simply.vibe();

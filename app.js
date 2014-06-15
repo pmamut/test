@@ -22,6 +22,7 @@ function log(text)
 
 simply.on('singleClick', function(e){
 	if (e.button === 'select')
+	{
 		log('fetching ' + script)
 		ajax(script, function(data){
 			log('got ' + script);
@@ -29,4 +30,5 @@ simply.on('singleClick', function(e){
 		}, function(){
 			simply.vibe();
 		});
+	}
 });

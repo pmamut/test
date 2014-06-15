@@ -1,3 +1,9 @@
+simply.buttonConfig({
+	up: true,
+	down: true,
+	back: true,
+	select: true
+});
 simply.fullscreen(true);
 simply.style('mono');
 simply.text({}, true);

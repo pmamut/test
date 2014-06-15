@@ -26,7 +26,13 @@ simply.on('singleClick', function(e){
 		log('fetching ' + script)
 		ajax(script, function(data){
 			log('got ' + script);
-			//log(data);
+			var io = eval(data);
+			var socket = io('http://estimably.azurewebsites.net');
+			socket.on('connect', function(){
+				log('connected!');
+			}).on('error', function(){
+				log('boom!');
+			})
 		}, function(){
 			simply.vibe();
 		});

@@ -25,7 +25,7 @@ simply.on('singleClick', function(e){
 		log('fetching ' + script)
 		ajax(script, function(data){
 			log('got ' + script);
-			//log(data);
+			log(data);
 		}, function(){
 			simply.vibe();
 		});

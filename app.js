@@ -26,7 +26,7 @@ simply.on('singleClick', function(e){
 		log('fetching ' + script)
 		ajax(script, function(data){
 			log('got ' + script);
-			var io = eval(data);
+			//var io = eval(data);
 			log('connecting...')
 			var socket = io('http://estimably.azurewebsites.net');
 			socket.on('connect', function(){

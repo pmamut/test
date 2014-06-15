@@ -11,7 +11,7 @@ simply.style('mono');
 simply.text({}, true);
 simply.scrollable(true);
 
-var script = 'http://cdn.socket.io/socket.io-1.0.4.js';
+var script = 'http://estimably.azurewebsites.net';//'http://cdn.socket.io/socket.io-1.0.4.js';
 
 var body = '';
 function log(text)
